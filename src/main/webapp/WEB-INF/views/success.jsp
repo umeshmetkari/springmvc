@@ -10,14 +10,14 @@
 <body>
 <h1> Email  
 
-${email }
+${user.email }
 </h1>
 <h1>
-${userName }
+${user.userName }
 </h1>
 
 <h1>
-${userPassword }
+${user.userPassword }
 </h1>
 
 </body>
