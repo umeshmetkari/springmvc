@@ -2,10 +2,13 @@ package springmvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
+
+import springmvc.Student;
 
 @Controller
 public class HomeController {
@@ -51,5 +54,22 @@ public class HomeController {
 		 return redirectView;	
 		}
 		
+	@RequestMapping("/register")
+	  public String register( )
+		{
+		
+		  
+		 return "register";	
+		}
 	
+	@RequestMapping("/check")
+	  public String check( @ModelAttribute("student") Student student)
+		{
+		
+		   System.out.println(student);
+		 return "success";	
+		}
+	
+	
+		
 }

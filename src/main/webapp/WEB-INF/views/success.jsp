@@ -8,16 +8,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1> Email  
+<h1>  Student data
 
-${user.email }
+${student }
 </h1>
 <h1>
-${user.userName }
+
 </h1>
 
 <h1>
-${user.userPassword }
+
 </h1>
 
 </body>
